@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,h2,h3,h4 {
+  font-family: "Merriweather", serif;
+  line-height: 150%;
+}
+
+* {
+  font-family: "Merriweather Sans", sans-serif;
+}

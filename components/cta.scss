@@ -1,0 +1,19 @@
+.dimm-cta {
+  transition: transform 300ms;
+  font-size: 24px;
+  border-radius: 9999px;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  background-color: #6514cf;
+  width: max-content;
+  height: auto;
+  &:hover {
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.15);
+    -moz-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.15);
+  }
+}

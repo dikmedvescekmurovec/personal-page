@@ -1,0 +1,16 @@
+a[href],
+area[href],
+input:not([disabled]),
+select:not([disabled]),
+textarea:not([disabled]),
+button:not([disabled]),
+iframe,
+[tabindex],
+[contentEditable="true"] {
+  &:not([tabindex="-1"]) {
+    &:focus-visible {
+      outline: 4px solid #6514cf;
+      outline-offset: 4px;
+    }
+  }
+}

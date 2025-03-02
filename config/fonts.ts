@@ -1,11 +1,12 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import { Merriweather, Merriweather_Sans } from "next/font/google";
 
-export const fontSans = FontSans({
+export const merriweather = Merriweather({
+  variable: "--font-merriweather",
   subsets: ["latin"],
-  variable: "--font-sans",
+  weight: ["400", "700"],
 });
 
-export const fontMono = FontMono({
+export const merriweatherSans = Merriweather_Sans({
+  variable: "--font-merriweather-sans",
   subsets: ["latin"],
-  variable: "--font-mono",
 });

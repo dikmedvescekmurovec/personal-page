@@ -1,8 +1,10 @@
 import "@/styles/globals.css";
 import clsx from "clsx";
-import { Metadata, Viewport } from "next";
+import { Metadata } from "next";
 
 import "../styles/focus.scss";
+import "../styles/text.scss";
+
 import { Providers } from "./providers";
 
 import { Navbar } from "@/components/navbar";
@@ -36,7 +38,7 @@ export default function RootLayout({
           merriweather.variable,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <Navbar />
           <main className="w-full ">{children}</main>
         </Providers>

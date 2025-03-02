@@ -15,6 +15,8 @@ import NextLink from "next/link";
 
 import svgLogo from "../public/logo.svg";
 
+import { ThemeSwitch } from "./theme-switch";
+
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
@@ -32,7 +34,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium dark",
                 )}
                 color="foreground"
                 href={item.href}
@@ -42,6 +44,7 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </ul>
+        <ThemeSwitch />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
